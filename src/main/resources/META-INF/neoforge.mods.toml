@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+issueTrackerURL="https://github.com/Mrbysco/PortalRelocator/issues"
+license="MIT"
+
+[[mods]]
+modId="portalrelocator"
+version="${file.jarVersion}"
+displayName="Portal Relocator"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/portal-relocator"
+authors="Mrbysco"
+credits="NekoMaster1000 for the idea"
+description='''
+Changes where you end up when going through a Nether Portal
+'''
+[[dependencies.portalrelocator]]
+modId="minecraft"
+type="required"
+versionRange="[1.21,1.22)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.portalrelocator]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.1,)"
+ordering="NONE"
+side="BOTH"
+[[mixins]]
+config="portalrelocator.mixins.json"
